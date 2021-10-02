@@ -4,7 +4,7 @@
 #### Final Course Project
 <br>
 
-# Demo Sketch
+# Demo Sketchs
 
 ### Large Screen View
 <img src="./Readme_Pics_and_Vids/desktopVersion.png" alt="Demo Sketch for Large Screen" width="450"/>
