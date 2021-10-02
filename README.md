@@ -7,7 +7,7 @@
 # Demo Sketch
 
 ## Large Screen View
-![Demo Sketch for Large Screen](./Readme_Pics_and_Vids/desktopVersion.png)
+<img src="./Readme_Pics_and_Vids/desktopVersion.png" alt="Demo Sketch for Large Screen" width="400"/>
 
 ## Mobile View
-![Demo Sketch for Large Screen](./Readme_Pics_and_Vids/mobileVersion.png)
+<img src="./Readme_Pics_and_Vids/mobileVersion.png" alt="Demo Sketch for Mobile" width="200"/>
