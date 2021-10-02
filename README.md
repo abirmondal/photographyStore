@@ -4,6 +4,9 @@
 #### Final Course Project
 <br>
 
+### I did build this portfolio website from **scratch**.
+<br>
+
 # Demo Sketches
 
 ### Large Screen View
