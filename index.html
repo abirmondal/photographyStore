@@ -6,34 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotoGraphy Store</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li class="headLink">
-                    <a href="#">Photo</a>
-                </li>
-                <li>
-                    <a href="#">Contacts</a>
-                    <div class="activeLine"></div>
-                </li>
-                <li>
-                    <a href="#">Pricing</a>
-                    <div class="activeLine"></div>
-                <li>
-                    <a href="#">About Us</a>
-                    <div class="activeLine"></div>
-                <li>
-                    <a class="active" href="#">Home</a>
-                    <div class="activeLine"></div>
-                </li>
-            </ul>
+            <a class="mainLink" href="#">PhotoGraphy Store</a>
+            <button class="hambergBtn">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapseMenu">
+                <ul>
+                    <li>
+                        <a class="active" href="#">Home</a>
+                        <div class="activeLine"></div>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                        <div class="activeLine"></div>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                        <div class="activeLine"></div>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                        <div class="activeLine"></div>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <div class="mainImg">
             <img src="img/photographer-clipart.png" alt="PhotoGrapher Image">
+            <div class="titleText">
+                PhotoGraphy Store
+            </div>
         </div>
         <div class="mainBody">
             Hi<br>Hi<br>Hi<br>Hi<br>Hi<br>
@@ -48,5 +58,6 @@
             Hi<br>Hi<br>Hi<br>Hi<br>Hi<br>
         </div>
     </main>
+    <script src="js\main.js"></script>
 </body>
 </html>

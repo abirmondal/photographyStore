@@ -2,53 +2,59 @@ body {
     margin: 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    top: 0;
+nav {
     width: 100vw;
-    /* background-color: red; */
+    position: fixed;
+    padding-top: 10px;
+    overflow: hidden;
+    z-index: 10;
 }
-
-li {
-    float: right;
-}
-li.headLink {
-    float: left;
-}
-
-li a {
-    display: block;
-    padding: 15px 20px;
+nav a {
     text-decoration: none;
-    text-align: center;
-    font-size: 20px;
     color: rgb(50, 180, 50);
+    padding: 10px;
+    text-align: center;
 }
-li>.active {
-    color: rgb(2, 100, 2);
+.collapseMenu ul {
+    text-align: center;
+}
+.collapseMenu li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px;
 }
 li>.active+.activeLine {
-    margin: -5px auto;
-    padding: 2px;
-    width: 80%;
-    background-color: rgb(2, 100, 2);
-    opacity: 50%;
-    border-radius: 20px;
-}
-
-.headLink a {
-    padding: 0px 10px;
     margin: auto;
+    margin-top: 10px;
+    padding: 2px;
+    background-color: rgb(2, 100, 2);
+    opacity: 0.5;
+    border-radius: 20px;
+    width: 100%;
+}
+.mainLink {
     font-size: 50px;
-    text-decoration: none;
-    color: rgb(50, 180, 50);
+    float: left;
+    margin-top: 5px;
+}
+.collapseMenu {
+    display: inline-block;
 }
 
-.mainBody {
-    padding-top: 60px;
+.hambergBtn {
+    display: none;
+    margin-right: 5vw;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    z-index: 200;
+}
+button .fa {
+    color: rgb(50, 180, 50);
+    font-size: 40px;
 }
 
 .mainImg {
@@ -67,4 +73,45 @@ li>.active+.activeLine {
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+
+.titleText {
+    font-size: 130px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    width: 50vw;
+}
+
+@media screen and (max-width: 1000px) {
+    .collapseMenu {
+        display: none;
+        background-color: #000;
+        opacity: 0.9;
+        height: 100vh;
+        position: fixed;
+        top: 90px;
+        left: 0;
+        z-index: -11;
+    }
+    .collapseMenu ul {
+        width: 100vw;
+        padding: 0;
+    }
+    .collapseMenu li {
+        display: block;
+        line-height: 15vh;
+    }
+    .hambergBtn {
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .mainLink {
+        font-size: 30px;
+    }
+    button .fa {
+        font-size: 25px;
+    }
 }
