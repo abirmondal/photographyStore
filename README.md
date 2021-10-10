@@ -4,7 +4,7 @@
 #### Final Course Project
 <br>
 
-> :heavy_check_mark: I did build this portfolio website from *scratch*.
+> :heavy_check_mark: I did build this portfolio website from *scratch*, and it is done using *modile-first* technique.
 <br>
 
 # Demo Sketches
