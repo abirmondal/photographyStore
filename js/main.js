@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     $(document).scroll(function () {
         var scroll_pos = $(this).scrollTop();
-        if (scroll_pos > 10) {
+        if (scroll_pos > 100) {
             $("nav").css('background-color', 'rgb(100, 100, 100)');
         } else {
             $("nav").css('background-color', 'transparent');

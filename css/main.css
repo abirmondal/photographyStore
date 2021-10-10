@@ -15,46 +15,46 @@ nav a {
     padding: 10px;
     text-align: center;
 }
+.collapseMenu {
+    display: none;
+    background-color: #000;
+    opacity: 0.9;
+    height: 100vh;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: -11;
+}
 .collapseMenu ul {
     text-align: center;
+    width: 100vw;
+    padding: 0;
 }
 .collapseMenu li {
     list-style-type: none;
-    display: inline-block;
     font-size: 25px;
-    padding: 10px;
-}
-li>.active+.activeLine {
-    margin: auto;
-    margin-top: 10px;
-    padding: 2px;
-    background-color: rgb(2, 100, 2);
-    opacity: 0.5;
-    border-radius: 20px;
-    width: 100%;
+    display: block;
+    line-height: 15vh;
 }
 .mainLink {
-    font-size: 50px;
+    font-size: 28px;
+    font-family: 'Libre Franklin', sans-serif;
     float: left;
     margin-top: 5px;
 }
-.collapseMenu {
-    display: inline-block;
-}
-
 .hambergBtn {
-    display: none;
+    display: block;
     margin-right: 5vw;
     border: none;
     background-color: transparent;
     position: absolute;
     top: 30px;
-    right: 10px;
+    right: 1vw;
     z-index: 200;
 }
 button .fa {
     color: rgb(50, 180, 50);
-    font-size: 40px;
+    font-size: 26px;
 }
 
 .mainImg {
@@ -66,52 +66,107 @@ button .fa {
     position: relative;
     z-index: -100;
 }
-
 .mainImg img {
-    max-width: 40vw;
-    max-height: 80vh;
+    max-width: 60vw;
+    max-height: 100vh;
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
 
 .titleText {
-    font-size: 130px;
+    font-size: 45px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 800;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 20%;
+    transform: translateY(-20%);
     padding: 20px;
     width: 50vw;
+    color: rgb(2, 100, 2);
 }
 
-@media screen and (max-width: 1000px) {
-    .collapseMenu {
-        display: none;
-        background-color: #000;
-        opacity: 0.9;
-        height: 100vh;
-        position: fixed;
-        top: 90px;
-        left: 0;
-        z-index: -11;
-    }
-    .collapseMenu ul {
-        width: 100vw;
-        padding: 0;
-    }
+@media screen and (min-width: 450px) {
     .collapseMenu li {
-        display: block;
-        line-height: 15vh;
-    }
-    .hambergBtn {
-        display: block;
-    }
-}
-@media screen and (max-width: 600px) {
-    .mainLink {
         font-size: 30px;
     }
+    .mainLink {
+        font-size: 40px;
+    }
     button .fa {
-        font-size: 25px;
+        font-size: 35px;
+    }
+    .mainImg img {
+        max-width: 38vw;
+        max-height: 70vh;
+    }
+    .titleText {
+        font-size: 60px;
+    }
+}
+@media screen and (min-width: 850px) {
+    .collapseMenu {
+        display: block;
+        background-color: transparent;
+        position: relative;
+        opacity: 1;
+        top: 0;
+        left: 1vw;
+        height: auto;
+    }
+    .collapseMenu ul {
+        text-align: center;
+    }
+    .collapseMenu li {
+        line-height: 50px;
+        display: inline-block;
+        font-size: 20px;
+        padding: 0px 10px;
+    }
+    li>.active+.activeLine {
+        margin: auto;
+        padding: 2px;
+        background-color: rgb(2, 100, 2);
+        opacity: 0.5;
+        border-radius: 20px;
+        width: 100%;
+    }
+    .mainLink {
+        font-size: 42px;
+        padding-left: 50px;
+    }
+    button .fa {
+        font-size: 40px;
+    }
+    .mainImg img {
+        max-width: 40vw;
+        max-height: 80vh;
+        right: 1vw;
+    }
+    .titleText {
+        font-size: 85px;
+        left: 50px;
+        top: 30%;
+    }
+    .hambergBtn {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .collapseMenu li {
+        font-size: 30px;
+    }
+    .mainLink {
+        font-size: 55px;
+    }
+    button .fa {
+        font-size: 45px;
+    }
+    .mainImg img {
+        max-width: 40vw;
+        max-height: 80vh;
+    }
+    .titleText {
+        font-size: 120px;
     }
 }
