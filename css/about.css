@@ -1,0 +1,74 @@
+.sectionHead {
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    color: rgb(2, 100, 2);
+    font-size: 40px;
+    padding: 10px 20px;
+}
+.aboutContains {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.carousalBox {
+    width: 150px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+.carousalBox legend {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.carousal {
+    margin: 0;
+    position: absolute;
+    left: 0px;
+}
+.carousal img {
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+    display: inline-block;
+    margin: -2px;
+    padding: -10px;
+}
+.carousalBtn {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    z-index: 1;
+}
+/* ? Carousal Movement Buttons */
+#prevBtn, #nextBtn {
+    border-radius: 50%;
+    padding: 0px 8px;
+    border: none;
+    background-color: rgb(100, 100, 100);
+}
+.carousalBtn #prevBtn {float: left;}
+.carousalBtn #nextBtn {float: right;}
+.carousalBtn .fa {
+    color: #fff;
+    font-size: 25px;
+    padding: 3px;
+    font-weight: 800;
+}
+/* ? Text to show in the about section. */
+.aboutText {
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+@media screen and (min-width: 850px) {
+    .aboutContains {
+        flex-direction: row-reverse;
+    }
+    .aboutText {
+        flex: 70%;
+    }
+}

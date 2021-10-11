@@ -47,6 +47,7 @@ You can build the portfolio from **scratch** or using **framework** or using **t
 - Include a Carousel for your images (don't forget to turn off the automatic start feature if you can!!)
 - Use a sticky footer to create a consistent look across different browser heights (we usually only consider widths…)
 - Add a third viewport layout (e.g. a table view that is different than mobile or large-screen)
-- Again, these are just suggestions, please feel free to let your own creativity be your guide.
+
+Again, these are just suggestions, please feel free to let your own creativity be your guide.
 
 Each extra will be worth 10 pts, for a total of 40 pts.

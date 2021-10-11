@@ -1,0 +1,16 @@
+.loader {
+    position: fixed;
+    top: 35%;
+    left: 40%;
+    /* transform: translate(-10%, -50%); */
+    padding: 100px;
+    border: 15px solid rgb(200, 200, 200);
+    border-top: 15px solid rgb(50, 180, 50);
+    animation: spin 2s linear infinite;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

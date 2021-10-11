@@ -1,5 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
+}
+nav, main, footer {
+    display: none;
 }
 
 nav {
@@ -11,7 +17,7 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: rgb(50, 180, 50);
+    color: rgb(2, 100, 2);
     padding: 10px;
     text-align: center;
 }
@@ -21,9 +27,9 @@ nav a {
     opacity: 0.9;
     height: 100vh;
     position: fixed;
-    top: 65px;
+    top: 68px;
     left: 0;
-    z-index: -11;
+    z-index: 1000;
 }
 .collapseMenu ul {
     text-align: center;
@@ -35,6 +41,9 @@ nav a {
     font-size: 25px;
     display: block;
     line-height: 15vh;
+}
+.active, nav a:hover {
+    color: rgb(50, 180, 50);
 }
 .mainLink {
     font-size: 28px;
@@ -52,7 +61,7 @@ nav a {
     right: 1vw;
     z-index: 200;
 }
-button .fa {
+.hambergBtn .fa {
     color: rgb(50, 180, 50);
     font-size: 26px;
 }
@@ -86,14 +95,22 @@ button .fa {
     color: rgb(2, 100, 2);
 }
 
+/* ! Do something without using padding */
+#aboutus, #pricing, #contact {
+    padding-top: 100px;
+}
+
 @media screen and (min-width: 450px) {
+    .collapseMenu {
+        top: 77px;
+    }
     .collapseMenu li {
         font-size: 30px;
     }
     .mainLink {
         font-size: 40px;
     }
-    button .fa {
+    .hambergBtn .fa {
         font-size: 35px;
     }
     .mainImg img {
@@ -110,7 +127,7 @@ button .fa {
         background-color: transparent;
         position: relative;
         opacity: 1;
-        top: 0;
+        top: 0px;
         left: 1vw;
         height: auto;
     }
@@ -135,7 +152,7 @@ button .fa {
         font-size: 42px;
         padding-left: 50px;
     }
-    button .fa {
+    .hambergBtn .fa {
         font-size: 40px;
     }
     .mainImg img {
@@ -169,4 +186,24 @@ button .fa {
     .titleText {
         font-size: 120px;
     }
+}
+
+/* ? Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(50, 180, 50);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(2, 100, 2);
 }

@@ -7,6 +7,8 @@
 > :heavy_check_mark: I did build this portfolio website from *scratch*, and it is done using *modile-first* technique.
 <br>
 
+> :disappointed: I am really sorry for the colour combinations as I am really bad at that.
+
 # Demo Sketches
 
 ### Large Screen View
