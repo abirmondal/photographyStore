@@ -11,6 +11,10 @@ $(document).ready(function() {
         $(document).scrollTop($('#'+toScroll).offset().top);
         $('.active').removeClass('active');
         $(this).addClass('active');
+        // ? Close menu after link click
+        if ($('.hambergBtn').css('display') == 'block') {
+            $('.hambergBtn').click();
+        }
     });
     
     $(".hambergBtn").click(function() {
