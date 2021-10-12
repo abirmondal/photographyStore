@@ -10,6 +10,7 @@
 }
 .picExmp figure {
     padding: 5px;
+    margin: 0;
 }
 .catalogueImg {
     max-width: 90vw;
@@ -33,6 +34,6 @@
         align-items: baseline;
     }
     .catalogueImg {
-        width: 31vw;
+        width: 30vw;
     }
 }
