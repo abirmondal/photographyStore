@@ -33,7 +33,6 @@
     object-fit: cover;
     display: inline-block;
     margin: -2px;
-    padding: -10px;
 }
 .carousalBtn {
     position: absolute;
