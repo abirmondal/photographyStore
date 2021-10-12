@@ -1,16 +1,34 @@
 .loader {
     position: fixed;
-    top: 35%;
-    left: 40%;
-    /* transform: translate(-10%, -50%); */
-    padding: 100px;
-    border: 15px solid rgb(200, 200, 200);
-    border-top: 15px solid rgb(50, 180, 50);
+    top: 40%;
+    left: 30%;
+    padding: 50px;
+    border: 10px solid rgb(200, 200, 200);
+    border-top-color: rgb(50, 180, 50);
     animation: spin 2s linear infinite;
     border-radius: 50%;
-    /* background-color: red; */
 }
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media screen and (min-width: 450px) {
+    .loader {
+        padding: 70px;
+        border-width: 12px;
+        left: 35vw;
+    }
+}
+@media screen and (min-width: 850px) {
+    .loader {
+        left: 38vw;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .loader {
+        padding: 90px;
+        border-width: 15px;
+        left: 42vw;
+    }
 }

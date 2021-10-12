@@ -11,8 +11,7 @@ $(document).ready(function() {
         var toScroll = $(this).attr('href');
         toScroll = re.exec(toScroll)[1];
         $(document).scrollTop($('#'+toScroll).offset().top);
-        // $('.active').removeClass('active');
-        // $(this).addClass('active');
+        
         // ? Close menu after link click
         if ($('.hambergBtn').css('display') == 'block') {
             $('.hambergBtn').click();
