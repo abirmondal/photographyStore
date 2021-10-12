@@ -7,16 +7,19 @@ $(document).ready(function() {
     $('body').position({ top: 1000 });
     $('a').click(function(e) {
         e.preventDefault();
-        var toScroll = $(this).data('toscroll');
+        const re = /#(.+)/;
+        var toScroll = $(this).attr('href');
+        toScroll = re.exec(toScroll)[1];
         $(document).scrollTop($('#'+toScroll).offset().top);
-        $('.active').removeClass('active');
-        $(this).addClass('active');
+        // $('.active').removeClass('active');
+        // $(this).addClass('active');
         // ? Close menu after link click
         if ($('.hambergBtn').css('display') == 'block') {
             $('.hambergBtn').click();
         }
     });
     
+    // ? Menu button click
     $(".hambergBtn").click(function() {
         $(".collapseMenu").slideToggle();
         if ($("html").css("overflow") == "visible") {
@@ -32,6 +35,7 @@ $(document).ready(function() {
 
     // ? Navbar change color on scroll.
     $(document).scroll(function () {
+        secActive();
         var scroll_pos = $(this).scrollTop();
         if (scroll_pos > 50) {
             $("nav").css('background-color', 'rgba(180, 180, 180, 0.99)');
@@ -40,6 +44,20 @@ $(document).ready(function() {
         }
     });
 });
+
+// ? ScrollSpy
+function secActive() {
+    for (let i = 0; i < $('.collapseMenu a').length; i++) {
+        const element = $('.collapseMenu li:nth-child('+(i+1)+') a');
+        const re = /#(.+)/;
+        const elementID = re.exec(element.attr('href'))[1];
+        console.log();
+        if ($(document).scrollTop() >= ($('#' + elementID).position()['top']) ) {
+            $('.active').removeClass('active');
+            element.addClass('active');
+        }
+    }
+}
 
 // ? Carousal JS Code
 var x = $('.carousal').css('left');
