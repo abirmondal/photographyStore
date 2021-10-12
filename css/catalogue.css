@@ -1,0 +1,38 @@
+.subSec {
+    text-align: center;
+}
+.subSecHead {
+    font-family: 'Libre Franklin', sans-serif;
+}
+.picExmp {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.picExmp div {
+    padding: 5px;
+}
+.catalogueImg {
+    max-width: 90vw;
+    text-align: center;
+    border: 2px solid rgb(50, 180, 50);
+}
+
+@media screen and (min-width: 450px) {
+    .picExmp {
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    .catalogueImg {
+        width: 45vw;
+    }
+}
+@media screen and (min-width: 850px) {
+    .picExmp {
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .catalogueImg {
+        width: 31vw;
+    }
+}

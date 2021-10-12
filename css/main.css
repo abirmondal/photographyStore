@@ -42,7 +42,7 @@ nav a {
     display: block;
     line-height: 15vh;
 }
-.active, nav a:hover {
+.active, nav a:hover:not(active) {
     color: rgb(50, 180, 50);
 }
 .mainLink {
@@ -96,7 +96,7 @@ nav a {
 }
 
 /* ! Do something without using padding */
-#aboutus, #pricing, #contact {
+#aboutus, #catalogue, #contact {
     padding-top: 100px;
 }
 
