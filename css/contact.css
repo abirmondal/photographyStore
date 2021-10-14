@@ -1,0 +1,46 @@
+#contact {
+    padding-bottom: 100px;
+}
+.contactSec {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.addMap {
+    text-align: center;
+}
+.addMap iframe {
+    width: 90vw;
+    height: 60vh;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+.contactDet {
+    text-align: center;
+    padding-top: 20px;
+    padding: 50px;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 850px) {
+    .contactSec {
+        flex-direction: row-reverse;
+    }
+    .addMap {
+        flex: 40%;
+    }
+    .addMap iframe {
+        width: 95%;
+        height: 80vh;
+    }
+    .contactDet {
+        text-align: left;
+        flex: 60%;
+        font-size: 22px;
+    }
+    .contactSubHead {
+        text-align: center;
+        font-size: 35px;
+    }
+}

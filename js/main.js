@@ -5,7 +5,7 @@ $(document).ready(function() {
     
     // ? Smooth scroll to scetions
     $('body').position({ top: 1000 });
-    $('a').click(function(e) {
+    $('nav a').click(function(e) {
         e.preventDefault();
         const re = /#(.+)/;
         var toScroll = $(this).attr('href');
