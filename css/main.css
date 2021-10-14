@@ -44,6 +44,7 @@ nav a {
 }
 .active, nav a:hover:not(active) {
     color: rgb(50, 180, 50);
+    background-color: transparent;
 }
 .mainLink {
     font-size: 28px;
