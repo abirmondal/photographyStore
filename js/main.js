@@ -32,17 +32,39 @@ $(document).ready(function() {
         }
     });
 
-    // ? Navbar change color on scroll.
+    // ? Navbar change color on scroll, Top Scroll Button
     $(document).scroll(function () {
         secActive();
         var scroll_pos = $(this).scrollTop();
+
+        // ? For Scroll Top Button
+        if (scroll_pos > 200) {
+            if ($('.scrollTop').css('bottom') == '-50px') {
+                $('.scrollTop').animate({ bottom: "50px" });
+            }
+        } else {
+            if ($('.scrollTop').css('bottom') == '50px') {
+                $('.scrollTop').animate({ bottom: "-50px" });
+            }
+        }
+        
+        // ? For Navbar Color Change
         if (scroll_pos > 50) {
             $("nav").css('background-color', 'rgba(180, 180, 180, 0.99)');
         } else {
             $("nav").css('background-color', 'transparent');
         }
     });
+
+    $('.scrollTop').click(function() {
+        topScroll();
+    })
 });
+
+// ? Top Scroll Button
+function topScroll() {
+    $(window).scrollTop(0);
+}
 
 // ? ScrollSpy
 function secActive() {
