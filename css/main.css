@@ -98,6 +98,7 @@ nav a {
 /* ! Do something without using padding */
 #aboutus, #catalogue, #contact {
     padding-top: 100px;
+    min-height: 100vh;
 }
 
 @media screen and (min-width: 450px) {

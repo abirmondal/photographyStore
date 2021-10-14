@@ -36,11 +36,11 @@ $(document).ready(function() {
     $(document).scroll(function () {
         secActive();
         var scroll_pos = $(this).scrollTop();
-        if (scroll_pos > 50) {
-            $("nav").css('background-color', 'rgba(180, 180, 180, 0.99)');
-        } else {
-            $("nav").css('background-color', 'transparent');
-        }
+        // if (scroll_pos > 50) {
+        //     $("nav").css('background-color', 'rgba(180, 180, 180, 0.99)');
+        // } else {
+        //     $("nav").css('background-color', 'transparent');
+        // }
     });
 });
 
@@ -50,8 +50,7 @@ function secActive() {
         const element = $('.collapseMenu li:nth-child('+(i+1)+') a');
         const re = /#(.+)/;
         const elementID = re.exec(element.attr('href'))[1];
-        console.log();
-        if ($(document).scrollTop() >= ($('#' + elementID).position()['top']) ) {
+        if (Math.ceil($(window).scrollTop()) >= Math.floor(($('#' + elementID).position()['top'])) ) {
             $('.active').removeClass('active');
             element.addClass('active');
         }
