@@ -36,11 +36,11 @@ $(document).ready(function() {
     $(document).scroll(function () {
         secActive();
         var scroll_pos = $(this).scrollTop();
-        // if (scroll_pos > 50) {
-        //     $("nav").css('background-color', 'rgba(180, 180, 180, 0.99)');
-        // } else {
-        //     $("nav").css('background-color', 'transparent');
-        // }
+        if (scroll_pos > 50) {
+            $("nav").css('background-color', 'rgba(180, 180, 180, 0.99)');
+        } else {
+            $("nav").css('background-color', 'transparent');
+        }
     });
 });
 
