@@ -23,12 +23,12 @@ $(document).ready(function() {
         $(".collapseMenu").slideToggle();
         if ($("html").css("overflow") == "visible") {
             $("html").css("overflow", "hidden");
-            $(".fa").removeClass("fa-bars");
-            $(".fa").addClass("fa-close");
+            $(".hambergBtn .fa").removeClass("fa-bars");
+            $(".hambergBtn .fa").addClass("fa-close");
         } else {
             $("html").css("overflow", "visible");
-            $(".fa").removeClass("fa-close");
-            $(".fa").addClass("fa-bars");
+            $(".hambergBtn .fa").removeClass("fa-close");
+            $(".hambergBtn .fa").addClass("fa-bars");
         }
     });
 
