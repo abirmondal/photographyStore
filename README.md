@@ -1,10 +1,9 @@
 # Photography Store Portfolio
 
-#### This is a repository for Coursera Course - Web Development for Everybody
-#### Final Course Project
+### Final Course Project, Portfolio Website for Coursera Course - Web Development for Everybody Capstone
 <br>
 
-> :heavy_check_mark: I did build this portfolio website from *scratch*, and it is done using *modile-first* technique.
+> :heavy_check_mark: I did build this portfolio website from ***scratch***, and it is done using ***modile-first*** technique.
 <br>
 
 # Demo Sketches
